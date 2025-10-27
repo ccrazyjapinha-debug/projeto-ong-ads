@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG Driblando o Destino - Projetos</title>
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>ONG Driblando &#9917; Destino</h1>
-        <nav>
+        
+        <nav id="menu-principal"> 
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="cadastro.html">Seja um Voluntário</a></li>
             </ul>
         </nav>
+
+        <button id="btn-hamburger">
+            <span class="linha-hamburger"></span>
+            <span class="linha-hamburger"></span>
+            <span class="linha-hamburger"></span>
+        </button>
     </header>
 
     <main>
@@ -28,37 +35,40 @@
             </p>
         </section>
 
-        <section>
-            <h2>Como Doar?</h2>
-            <p>
-                Sua doação se transforma diretamente em material esportivo, uniformes, alimentação e apoio escolar 
-                para nossas crianças. Qualquer valor faz uma enorme diferença e ajuda a manter nosso projeto vivo.
-            </p>
-            
+        <section class="card">
             <img src="img/img-projetos.jpg" alt="treino de futebol com crianças da ONG Driblando o Destino">
             
-            <p>
-                Para doar, você pode utilizar nossa chave PIX (CNPJ): 12.345.678/0001-99 
-                ou entrar em contato para doações de materiais.
-            </p>
+            <div class="card-content">
+                <h2>Como Doar?</h2>
+                <p>
+                    Sua doação se transforma diretamente em material esportivo, uniformes, alimentação e apoio escolar
+                    para nossas crianças. Qualquer valor faz uma enorme diferença e ajuda a manter nosso projeto vivo.
+                </p>
+                <p>
+                    Para doar, você pode utilizar nossa chave PIX (CNPJ): 12.345.678/0001-99
+                    ou entrar em contato para doações de materiais.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <h2>Seja um Voluntário</h2>
-            <p>
-                Você tem tempo e quer fazer a diferença? Estamos sempre precisando de voluntários para atuar como:
-            </p>
-            <ul>
-                <li>Treinadores e auxiliares técnicos</li>
-                <li>Psicólogos e pedagogos</li>
-                <li>Apoio logístico para eventos e jogos</li>
-                <li>Motoristas para transporte das crianças</li>
-            </ul>
-            <p>
-                Se interessou? Clique no link abaixo e preencha nosso formulário de cadastro!
-            </p>
-            
-            <a href="cadastro.html">Quero ser voluntário!</a>
+        <section class="card">
+            <div class="card-content">
+                <h2>Seja um Voluntário</h2>
+                <p>
+                    Você tem tempo e quer fazer a diferença? Estamos sempre precisando de voluntários para atuar como:
+                </p>
+                <ul>
+                    <li>Treinadores e auxiliares técnicos</li>
+                    <li>Psicólogos e pedagogos</li>
+                    <li>Apoio logístico para eventos e jogos</li>
+                    <li>Motoristas para transporte das crianças</li>
+                </ul>
+                <p>
+                    Se interessou? Clique no link abaixo e preencha nosso formulário de cadastro!
+                </p>
+                
+                <a href="cadastro.html" class="btn">Quero ser voluntário!</a>
+            </div>
         </section>
     </main>
 
@@ -67,5 +77,7 @@
         <p>Telefone: (11) 93222-0779</p>
         <p>Email:contato@driblandodestino.org</p>
         <p>&copy; 2025 ONG Driblando o Destino - Todos os direitos reservados.</p>
-        </body>
+    </footer>
+    
+</body>
 </html>
