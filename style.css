@@ -317,3 +317,48 @@ main form input:invalid {
         padding: var(--espaco-md);
     }
 }
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --cor-fundo-geral: #111;
+        --cor-fundo-secao: #1e1e1e;
+        --cor-texto-principal: #f0f0f0;
+        --cor-texto-secundario: #aaa;
+        --cor-borda: #444;
+        
+        --cor-marca-marrom: #D6A478;
+        --cor-marca-laranja: #ffc299;
+    }
+    
+    h1 {
+        color: var(--cor-marca-marrom);
+        text-shadow: none;
+    }
+
+    header {
+        background-color: var(--cor-fundo-secao);
+    }
+    
+    header nav a {
+        color: var(--cor-texto-secundario);
+        text-shadow: none;
+    }
+
+    header nav a:hover,
+    header nav a:focus {
+        background-color: #333;
+    }
+
+    .btn:hover,
+    .btn:focus {
+        background-color: var(--cor-marca-marrom); 
+    }
+    
+    main form input:focus {
+        box-shadow: 0 0 0 3px rgba(214, 164, 120, 0.5);
+    }
+    
+    main form input:invalid {
+        box-shadow: 0 0 0 3px rgba(255, 194, 153, 0.5);
+    }
+}
